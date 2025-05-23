@@ -141,3 +141,22 @@ class Test {
 ## 🔚 Conclusion
 
 Inner classes in Java help write clean, readable, and maintainable code by logically grouping classes. They’re an important feature for implementing event handling, callbacks, and building well-encapsulated components.
+
+
+A **non-static inner class cannot have static variables or static methods** because it is tied to an instance of the outer class, and static members belong to the class itself, not instances.
+
+**Exception:**  
+You *can* declare **static final constants** (static final fields initialized with compile-time constants) inside a non-static inner class.
+
+Example:
+
+```java
+class Outer {
+    class Inner {
+        // This is NOT allowed:
+        // static int x = 5; // Compile error!
+
+        // This IS allowed:
+        static final int CONST = 10;
+    }
+}
