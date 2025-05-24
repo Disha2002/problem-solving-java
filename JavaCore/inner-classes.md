@@ -160,3 +160,23 @@ class Outer {
         static final int CONST = 10;
     }
 }
+
+
+**Can a static method directly call a non-static method inside the same class?**
+
+No, a static method **cannot directly call** a non-static method because non-static methods require an instance of the class.
+
+**Workaround:**  
+To call a non-static method from a static method, you must **instantiate the class** first and then call the method using that instance. For example:
+
+```java
+class MyClass {
+    void nonStaticMethod() {
+        System.out.println("Non-static method called");
+    }
+
+    static void staticMethod() {
+        MyClass obj = new MyClass();
+        obj.nonStaticMethod();  // Call via instance
+    }
+}
