@@ -1,4 +1,4 @@
-# Java `double` and `Double` Documentation – Interview Overview
+# Java `double` and `Double`
 
 ## 📘 Overview
 
