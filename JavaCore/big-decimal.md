@@ -1,5 +1,5 @@
 
-# Java BigDecimal Documentation – Interview Overview
+# Java BigDecimal
 
 ## 📘 Overview
 
