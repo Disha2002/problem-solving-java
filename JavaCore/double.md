@@ -1,178 +1,136 @@
-# Java `Double` Class - Complete Study Guide
+# Java `double`
 
-The `Double` class in Java is a wrapper class for the primitive type `double`. It belongs to the `java.lang` package and provides methods to handle double values as objects, useful in collections and utility operations.
+## 📘 Overview
+
+`double` is a **primitive data type** in Java used to represent **64-bit double-precision floating-point numbers**. It follows the IEEE 754 standard and is suitable for numerical calculations where **approximate precision** is acceptable.
 
 ---
 
-## 1. Definition and Declaration
+## 📦 Declaration
 
 ```java
-public final class Double extends Number implements Comparable<Double>
-```
-
-- **Final class**: Cannot be subclassed.
-- **Wrapper for `double`**: Allows using `double` values as objects.
-
----
-
-## 2. Memory Representation
-
-### Primitive `double`
-
-- **Size**: 64 bits (8 bytes)
-- **Standard**: IEEE 754 floating-point
-- **Stored as**:
-  - 1 bit for sign
-  - 11 bits for exponent
-  - 52 bits for mantissa (fraction)
-
-### `Double` Object:
-
-- Contains a single field of type `double`.
-- In memory:
-  - Object metadata (type info, hashcode, etc.)
-  - 64-bit double field
-
-**Note**: Object allocation adds overhead compared to the primitive.
-
----
-
-## 3. Immutability
-
-- `Double` objects are **immutable**.
-- Once created, the internal value cannot be changed.
-
-```java
-Double a = 10.5;
-// Cannot do: a.setValue(20.5); -- No such method
+double x = 3.14;
 ```
 
 ---
 
-## 4. Constructors
+## 🎯 Key Features
+
+- 64-bit IEEE 754 floating-point.
+- Approximate precision up to 15–17 decimal digits.
+- Suitable for general scientific and engineering calculations.
+- Fast computation due to hardware-level support.
+
+---
+
+## 🧠 When to Use
+
+- Performance-critical numeric calculations.
+- When absolute precision is not required (e.g., graphics, simulations).
+- For simple averages, scientific formulas.
+
+---
+
+## 🆚 Compared to Other Types
+
+| Type         | Precision       | Use Case                  |
+|--------------|-----------------|---------------------------|
+| `float`      | ~7 digits       | Lower precision, saves memory |
+| `double`     | ~15–17 digits   | Default for decimals      |
+| `BigDecimal` | Arbitrary       | High-precision finance     |
+
+---
+
+## 🔢 Operations
+
+`double` supports standard arithmetic:
 
 ```java
-Double(double value)
-Double(String s) throws NumberFormatException
+double a = 10.0;
+double b = 3.0;
+
+double sum = a + b;
+double diff = a - b;
+double prod = a * b;
+double quot = a / b;
+double rem = a % b;
 ```
 
 ---
 
-## 5. Constants
+## ⚠️ Precision Issues
 
 ```java
-Double.POSITIVE_INFINITY
-Double.NEGATIVE_INFINITY
-Double.NaN
-Double.MAX_VALUE        // ≈ 1.7976931348623157E308
-Double.MIN_VALUE        // ≈ 4.9E-324
-Double.SIZE             // 64
-Double.BYTES            // 8
-Double.TYPE             // double.class
+System.out.println(0.1 + 0.2); // Outputs: 0.30000000000000004
 ```
+
+This occurs due to binary representation limitations. For accurate financial or scientific computations, use `BigDecimal`.
 
 ---
 
-## 6. Key Methods
+## 🔍 Comparison Best Practice
 
-### Value Retrieval
-
-```java
-doubleValue(), byteValue(), shortValue(), intValue(), longValue(), floatValue()
-```
-
-### Parsing & Conversion
+Avoid `==` for comparing floating-point values. Use a tolerance (`epsilon`):
 
 ```java
-parseDouble(String s)
-valueOf(String s)
-valueOf(double d)
-toString(), toHexString(double d)
-```
+double a = 0.1 + 0.2;
+double b = 0.3;
+double epsilon = 1e-9;
 
-### Comparison
-
-```java
-compareTo(Double o), compare(double d1, double d2)
-equals(Object o), hashCode()
-```
-
-### Special Checks
-
-```java
-isNaN(double v)
-isInfinite(double v)
-```
-
----
-
-## 7. Autoboxing & Unboxing
-
-```java
-Double obj = 10.5;     // Autoboxing
-double val = obj;      // Unboxing
-```
-
----
-
-## 8. Floating-Point Precision
-
-### Precision Loss
-
-Due to binary representation:
-
-```java
-System.out.println(0.1 + 0.2); // 0.30000000000000004
-```
-
-### Safe Comparison
-
-Use an epsilon (tolerance):
-
-```java
-Math.abs(a - b) < 1e-9
-```
-
----
-
-## 9. Best Practices
-
-- Use `Double.compare(a, b)` instead of `==`.
-- Prefer `BigDecimal` when high precision is required.
-- Always check for `NaN` and `Infinity` when dealing with unknown values.
-
----
-
-## 10. Example
-
-```java
-public class DoubleDemo {
-    public static void main(String[] args) {
-        Double d1 = Double.valueOf("15.75");
-        double d2 = Double.parseDouble("20.25");
-
-        System.out.println("Sum: " + (d1 + d2));
-
-        if (Double.isNaN(d1)) {
-            System.out.println("Not a number");
-        }
-
-        System.out.println("Comparison: " + Double.compare(d1, d2));
-    }
+if (Math.abs(a - b) < epsilon) {
+    System.out.println("Equal");
 }
 ```
 
 ---
 
-## 11. Summary
+## 📚 Wrapper Class: `Double`
 
-| Feature | Description |
-|--------|-------------|
-| Wrapper for | `double` |
-| Immutability | Yes |
-| Memory size | 64 bits (primitive), object overhead for wrapper |
-| Standard | IEEE 754 |
-| Precision | ~15 decimal digits |
-| Use cases | Collections, Utilities, Type conversions |
+Java provides the `Double` class for object representation of `double`.
+
+```java
+Double obj = Double.valueOf(3.14);
+double val = obj.doubleValue();
+```
+
+### Common Methods:
+
+- `isNaN()`
+- `isInfinite()`
+- `compare(double d1, double d2)`
+- `parseDouble(String s)`
+- `toString()`
 
 ---
+
+## 📈 Type Conversion
+
+```java
+int i = 5;
+double d = i;        // Implicit
+int j = (int) d;     // Explicit (cast)
+```
+
+---
+
+## 🧪 Common Interview Questions
+
+1. What is the difference between `float` and `double`?
+2. Why can’t we use `==` to compare doubles reliably?
+3. What are floating-point precision errors?
+4. When should you use `BigDecimal` over `double`?
+5. How is a `double` stored internally in Java?
+
+---
+
+## 💡 Tips
+
+- Default type for decimal values in Java is `double`.
+- Use `BigDecimal` when accuracy is more important than performance.
+- Always use `Math.abs(a - b) < epsilon` for comparisons.
+
+---
+
+## 📚 Reference
+
+- [Java SE Double API](https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html)
