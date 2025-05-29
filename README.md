@@ -1,36 +1,16 @@
-# Java Problem Solving & Learning Journey 🚀
+# Software Developer Journey 🚀
 
-This repository tracks my journey of mastering **Java**, **Data Structures & Algorithms (DSA)**, and **systematic problem solving**.  
-It includes practice from platforms like LeetCode, Codeforces, GFG, and hands-on Java programs for real-world understanding.
-
----
-
-## 🧠 Why This Repo?
-
-To become a **highly skilled problem solver** and **Java backend engineer**, I'm building:
-- Strong fundamentals in Java (OOPs, Collections, Streams)
-- Pattern-based problem-solving ability (DSA)
-- Code fluency and debugging skills
-- Real-world project readiness
+This repository documents my journey to becoming a **skilled, well-rounded software developer**.  
+It includes everything from mastering **Java core**, practicing **Data Structures & Algorithms**, exploring **System Design**, and building strong **problem-solving** and **engineering fundamentals**.
 
 ---
 
-## 🛠️ What's Inside?
+## 🎯 Goals
 
-```bash
-java-problem-solving/
-├── DSA/
-│   ├── Arrays/
-│   ├── Strings/
-│   ├── Hashing/
-│   ├── StackQueue/
-│   └── SlidingWindow/
-├── JavaCore/
-│   ├── OOPs/
-│   ├── Collections/
-│   └── Streams/
-├── CompetitiveProgramming/
-│   └── Codeforces/
-├── Notes/
-│   └── Week1.md
-└── README.md
+- Build deep expertise in **Java** (OOP, multithreading, collections, streams, etc.)
+- Develop strong **DSA skills** for interviews and real-world software
+- Understand and apply key **System Design** concepts
+- Improve **code quality**, **debugging**, and **clean coding practices**
+- Maintain a habit of **structured learning and documentation**
+
+---
