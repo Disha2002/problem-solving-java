@@ -94,6 +94,3 @@ git push origin main
 | `git merge`            | Merge another branch          |
 
 ---
-
-Next file: `daily-usage/git-pull-fetch.md`  
-Say **next** when ready!
