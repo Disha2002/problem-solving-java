@@ -17,13 +17,13 @@ Writing clear, concise, and consistent commit messages is essential for maintain
 
 A typical commit message has three parts:
 
-\```
+```  
 <type>(<scope>): <subject>
 
 <body>
 
 <footer>
-\```
+```
 
 ### 1. Subject line (header)
 
@@ -51,37 +51,37 @@ A typical commit message has three parts:
 Use conventional prefixes to categorize commits:
 
 | Type     | Description                             |
-|----------|-------------------------------------|
-| feat     | A new feature                        |
-| fix      | A bug fix                           |
-| docs     | Documentation only changes          |
+|----------|---------------------------------------|
+| feat     | A new feature                         |
+| fix      | A bug fix                            |
+| docs     | Documentation-only changes           |
 | style    | Code style changes (formatting, no logic) |
 | refactor | Code changes that neither fix a bug nor add a feature |
-| perf     | Performance improvements            |
-| test     | Adding or fixing tests              |
-| chore    | Changes to build process or tools  |
+| perf     | Performance improvements             |
+| test     | Adding or fixing tests               |
+| chore    | Changes to build process or tools   |
 
 ---
 
 ## Examples
 
-\```
+```
 feat(auth): add OAuth2 login support
 
 Added support for OAuth2 login via Google and Facebook.
 This allows users to authenticate using their existing accounts.
 
 Closes #45
-\```
+```
 
-\```
+```
 fix(api): handle null pointer exception on GET /users
 
 Prevented server crash when the user data is null by adding a check
 before accessing properties.
 
 BREAKING CHANGE: API now returns 404 instead of 500 when user not found.
-\```
+```
 
 ---
 
