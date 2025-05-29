@@ -49,7 +49,7 @@ A clean Git history makes it easier to understand the evolution of a project, tr
 
 ## Example Workflow
 
-\```bash
+```bash
 git checkout -b feature/update-ui
 
 # make several small commits
@@ -58,7 +58,7 @@ git rebase -i main   # squash/fixup commits interactively
 git checkout main
 git merge --ff-only feature/update-ui
 git push origin main
-\```
+```
 
 ---
 
