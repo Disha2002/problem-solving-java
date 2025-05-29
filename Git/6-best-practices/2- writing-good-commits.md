@@ -44,7 +44,7 @@ Writing good commits means creating clear, meaningful, and focused changes that 
 
 ## Example of a Good Commit Workflow
 
-\```bash
+```bash
 git checkout -b feature/add-user-auth
 
 # make code changes
@@ -52,7 +52,8 @@ git checkout -b feature/add-user-auth
 git add .
 git commit -m "feat(auth): add user authentication with JWT"
 git push origin feature/add-user-auth
-\```
+```
+
 
 ---
 
