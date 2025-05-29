@@ -10,12 +10,12 @@ This document contains real-world Git workflow and debugging scenarios to prepar
 
 **Answer:**
 
-\```bash
+```bash
 git checkout feature
 git cherry-pick <commit-hash>   # Apply the commit to feature branch
 git checkout main
 git reset --hard HEAD~1          # Remove commit from main branch
-\```
+```
 
 ---
 
@@ -39,9 +39,9 @@ git reset --hard HEAD~1          # Remove commit from main branch
 
 **Answer:**
 
-\```bash
+```bash
 git reset --soft HEAD~1
-\```
+```
 
 ---
 
@@ -51,10 +51,10 @@ git reset --soft HEAD~1
 
 **Answer:**
 
-\```bash
+```bash
 git revert <commit-hash>
 git push origin main
-\```
+```
 
 ---
 
@@ -75,12 +75,12 @@ git push origin main
 
 **Answer:**
 
-\```bash
+```bash
 git rebase -i HEAD~<number-of-commits>
 
 # In the editor, change 'pick' to 'squash' or 'fixup' for commits to combine.
 
-\```
+```
 
 ---
 
@@ -90,10 +90,10 @@ git rebase -i HEAD~<number-of-commits>
 
 **Answer:**
 
-\```bash
+```bash
 git fetch origin
 git checkout -b feature/login origin/feature/login
-\```
+```
 
 ---
 
