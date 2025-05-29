@@ -17,14 +17,6 @@ Writing clear, concise, and consistent commit messages is essential for maintain
 
 A typical commit message has three parts:
 
-\```
-<type>(<scope>): <subject>
-
-<body>
-
-<footer>
-\```
-
 ### 1. Subject line (header)
 
 - Brief summary of the change (50 characters or less)
