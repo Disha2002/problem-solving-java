@@ -1,4 +1,4 @@
-package DSA.Math;
+package DataStructure.Math;
 
 public class RevereseInteger {
 

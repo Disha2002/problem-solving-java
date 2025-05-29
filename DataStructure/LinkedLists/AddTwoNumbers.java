@@ -1,4 +1,4 @@
-package DSA.LinkedLists;
+package DataStructure.LinkedLists;
 
 public class AddTwoNumbers {
 

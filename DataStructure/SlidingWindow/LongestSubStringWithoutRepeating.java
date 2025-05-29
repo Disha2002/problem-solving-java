@@ -1,4 +1,4 @@
-package DSA.SlidingWindow;
+package DataStructure.SlidingWindow;
 
 import java.util.HashSet;
 import java.util.Set;
