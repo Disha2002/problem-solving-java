@@ -8,15 +8,14 @@ Git can be installed on all major operating systems: Windows, macOS, and Linux. 
 
 ### ✅ Option 1: Install via Git for Windows
 
-1. Visit: [https://git-scm.com/download/win](https://git-scm.com/download/win)
-2. The download will start automatically.
-3. Run the installer and follow the steps:
-   - Choose default options unless you have specific needs.
-   - On "Choosing the default editor used by Git," you can pick VS Code or your favorite editor.
+1. Visit: [https://git-scm.com/download/win](https://git-scm.com/download/win)  
+2. The download will start automatically.  
+3. Run the installer and follow the steps:  
+   - Choose default options unless you have specific needs.  
+   - On "Choosing the default editor used by Git," you can pick VS Code or your favorite editor.  
    - On "Adjusting your PATH environment," select **"Git from the command line and also from 3rd-party software"**.
 
-4. After installation, open **Git Bash** or **Command Prompt** and verify:
-
+4. After installation, open **Git Bash** or **Command Prompt** and verify:  
    ```bash
    git --version
    ```
@@ -27,41 +26,32 @@ Git can be installed on all major operating systems: Windows, macOS, and Linux. 
 
 ### ✅ Option 1: Using Homebrew (Recommended)
 
-1. If you have Homebrew installed:
-
+1. If you have Homebrew installed:  
    ```bash
    brew install git
    ```
-
-2. After installation, check the Git version:
-
+2. After installation, check the Git version:  
    ```bash
    git --version
    ```
-
-3. You can confirm the install path (should show `/opt/homebrew/bin/git` or similar on Apple Silicon):
-
+3. Confirm the install path:  
    ```bash
    which git
    ```
 
 ### ✅ Option 2: Using the Git Installer
 
-1. Visit: [https://git-scm.com/download/mac](https://git-scm.com/download/mac)
+1. Visit: [https://git-scm.com/download/mac](https://git-scm.com/download/mac)  
 2. Download and run the installer.
 
 ### ✅ Option 3: Install Xcode Command Line Tools
 
-1. Run:
-
+1. Run:  
    ```bash
    xcode-select --install
    ```
-
-2. This installs Git along with other development tools.
-
-3. Check version:
-
+2. This installs Git along with other development tools.  
+3. Check version:  
    ```bash
    git --version
    ```
@@ -93,39 +83,35 @@ sudo pacman -S git
 
 ## 🔧 Verify Installation
 
-Run the following command in your terminal:
-
+Run the following command in your terminal:  
 ```bash
 git --version
 ```
 
-You should see output like:
-
+You should see output like:  
 ```
 git version 2.x.x
-```
-
-To see where Git was installed from (e.g. Homebrew or system default):
-
-```bash
-which git
 ```
 
 ---
 
 ## 👤 Optional: Configure Git After Install
 
-Set your global username and email (used for commits):
-
+Set your global username and email (used for commits):  
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 ```
 
-View your configuration:
-
+View your configuration:  
 ```bash
 git config --list
 ```
 
 ---
+
+## ✅ Summary
+
+Installing Git is a one-time setup step and essential for version control and collaboration. After installation, don’t forget to configure your user identity.
+
+Need help using Git daily? Check out `git-add-commit-push.md` next.

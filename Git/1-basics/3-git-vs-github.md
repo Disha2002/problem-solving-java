@@ -12,6 +12,7 @@ Many people use the terms **Git** and **GitHub** interchangeably, but they are *
 - You interact with Git using **command-line tools** (like `git init`, `git commit`, etc.).
 
 ### ✅ Key Features of Git:
+
 - Local version tracking
 - Branching and merging
 - Commit history
@@ -27,6 +28,7 @@ Many people use the terms **Git** and **GitHub** interchangeably, but they are *
 - GitHub provides a **web-based interface** and integrates with tools like CI/CD, code review, etc.
 
 ### ✅ Key Features of GitHub:
+
 - Remote repository hosting
 - Collaboration tools (pull requests, issues)
 - Access control and permissions
@@ -38,13 +40,13 @@ Many people use the terms **Git** and **GitHub** interchangeably, but they are *
 ## ⚖️ Git vs GitHub: Key Differences
 
 | Feature              | Git                             | GitHub                                 |
-|----------------------|----------------------------------|-----------------------------------------|
-| Type                 | Version Control System (tool)   | Web-based Git Repository Hosting       |
-| Installation         | Installed on local machine      | Web service, no install needed         |
-| Works Offline?       | Yes                              | No (requires internet)                 |
-| Collaboration        | Manual with shared repos        | Easy with forks, pull requests         |
-| Web Interface        | No                               | Yes                                    |
-| Popular Commands     | `git init`, `git commit`, etc.  | `git push origin`, `pull request`, etc.|
+|----------------------|--------------------------------|---------------------------------------|
+| Type                 | Version Control System (tool)  | Web-based Git Repository Hosting      |
+| Installation         | Installed on local machine     | Web service, no install needed        |
+| Works Offline?       | Yes                            | No (requires internet)                 |
+| Collaboration        | Manual with shared repos       | Easy with forks, pull requests         |
+| Web Interface        | No                             | Yes                                   |
+| Popular Commands     | `git init`, `git commit`, etc.| `git push origin`, `pull request`, etc.|
 
 ---
 

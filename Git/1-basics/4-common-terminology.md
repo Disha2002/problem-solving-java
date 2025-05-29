@@ -8,7 +8,7 @@ This file covers the most commonly used Git terms that you'll encounter while le
 
 A **repository** is a project folder that Git tracks. It contains all your project files and the entire version history of every file.
 
-- **Local repo**: On your computer
+- **Local repo**: On your computer  
 - **Remote repo**: On platforms like GitHub
 
 ---
@@ -29,7 +29,7 @@ Each commit has a unique hash (ID) and includes a message describing the change.
 
 A **branch** is a separate line of development that allows you to work on features or fixes without affecting the main codebase.
 
-- Default branch: `main` (or sometimes `master`)
+- Default branch: `main` (or sometimes `master`)  
 - Common practice: `feature/login-page`, `bugfix/navbar-crash`
 
 ```bash
