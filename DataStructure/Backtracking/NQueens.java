@@ -50,9 +50,21 @@ public class NQueens {
             result.add(constructBoard(board));
             return;
         }
+        for (int col = 0; col < n; col++) {
+            int d1 = row + col;
+            int d2 = row - col + n - 1;
 
-        for(int col =0; col < n; col++) {
-            if(col)
+            if (columns[col] || diag1[d1] || diag2[d2]) {
+                continue; 
+            }
+
+            board[row][col] = 'Q';
+            columns[col] = diag1[d1] = diag2[d2] = true;
+
+            backtrack(row + 1, n, board, result, columns, diag1, diag2);
+
+            board[row][col] = '.';
+            columns[col] = diag1[d1] = diag2[d2] = false;
         }
     }
 
