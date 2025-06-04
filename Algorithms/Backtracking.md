@@ -55,6 +55,7 @@ def backtrack(state, choices):
 ## 🏗️ Conceptual Model
 
 ### You are:
+
 - **Building** a solution step-by-step.
 - **Checking** if each step breaks the rules.
 - **Going deeper** when it's valid.
@@ -70,6 +71,7 @@ def backtrack(state, choices):
   - If it leads to a dead end, backtrack and try next number.
 
 ### Key Idea:
+
 > Try, check, recurse, undo.
 
 ---
@@ -77,6 +79,7 @@ def backtrack(state, choices):
 ## 🧠 Difference From DFS?
 
 Backtracking **is** DFS, but more:
+
 - It **builds and rejects paths** based on constraints.
 - It's **goal-driven**: only valid full solutions are kept.
 
@@ -106,6 +109,7 @@ Backtracking **is** DFS, but more:
 ## 🧪 Summary
 
 Backtracking is:
+
 - Recursive trial-and-error
 - Constraint-based pruning
 - Ideal for generating or solving under rules
