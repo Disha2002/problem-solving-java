@@ -1,4 +1,4 @@
-package DataStructure.Backtracking;
+package Algorithms.Backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -45,7 +45,7 @@ public class NQueens {
     }
 
     private void backtrack(int row, int n, char[][] board, List<List<String>> result,
-                           boolean[] columns, boolean[] diag1, boolean[] diag2) {
+            boolean[] columns, boolean[] diag1, boolean[] diag2) {
         if (row == n) {
             result.add(constructBoard(board));
             return;
@@ -55,7 +55,7 @@ public class NQueens {
             int d2 = row - col + n - 1;
 
             if (columns[col] || diag1[d1] || diag2[d2]) {
-                continue; 
+                continue;
             }
 
             board[row][col] = 'Q';

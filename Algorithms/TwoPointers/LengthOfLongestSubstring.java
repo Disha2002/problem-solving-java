@@ -1,4 +1,4 @@
-package DataStructure.Arrays.TwoPointers;
+package Algorithms.TwoPointers;
 
 import java.util.Arrays;
 import java.util.HashSet;

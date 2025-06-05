@@ -1,4 +1,4 @@
-package DataStructure.Backtracking;
+package Algorithms.Backtracking;
 
 public class WordSearch {
 

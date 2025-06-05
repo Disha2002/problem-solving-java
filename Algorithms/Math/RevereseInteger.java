@@ -1,4 +1,4 @@
-package DataStructure.Math;
+package Algorithms.Math;
 
 public class RevereseInteger {
 

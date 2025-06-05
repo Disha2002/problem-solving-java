@@ -1,4 +1,4 @@
-package DataStructure.Arrays.TwoPointers;
+package Algorithms.TwoPointers;
 
 public class TwoSum2 {
 
