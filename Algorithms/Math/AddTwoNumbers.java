@@ -1,4 +1,4 @@
-package DataStructure.LinkedLists;
+package Algorithms.Math;
 
 public class AddTwoNumbers {
 
